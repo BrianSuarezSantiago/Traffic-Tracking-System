@@ -1,13 +1,26 @@
+<a href="https://matplotlib.org">
+    <img align="right" src="https://custom-icon-badges.herokuapp.com/badge/Matplotlib-14354C.svg?logo=matplotlib" alt="Matplotlib">
+</a>
+
 <a href="https://numpy.org">
     <img align="right" src="https://custom-icon-badges.herokuapp.com/badge/NumPy-14354C.svg?logo=numpylogo" alt="NumPy">
+</a>
+
+<a href="https://www.tensorflow.org">
+    <img align="right" src="https://img.shields.io/badge/TensorFlow-FF6F00.svg?logo=TensorFlow&logoColor=white" alt="TensorFlow">
+</a>
+
+<a href="https://keras.io">
+    <img align="right" src="https://img.shields.io/badge/Keras-D00000.svg?logo=Keras&logoColor=white" alt="Keras">
 </a>
 
 <a href="https://www.python.org">
     <img align="right" src="https://custom-icon-badges.herokuapp.com/badge/Python-14354C.svg?logo=pythonlogo" alt="Python">
 </a>
 
-<h1 align="center">🧠 Detección de Vehículos y Análisis de Tráfico 🤖</h1>
+<h1 align="center">🧠 Detección de Vehículos y Análisis de Tráfico e Infracciones 🤖</h1>
 
+<img width="" height="" src="./resources/Header.jpg" alt="City Traffic">
 
 El presente proyecto consiste en un sistema que ofrece una solución para una [Smart City](https://es.wikipedia.org/wiki/Ciudad_inteligente) basándose en el análisis de tráfico haciendo uso de técnicas de visión por computador para la detección de la velocidad, la dirección y el conteo de entradas y salidas de vehículos en una dirección a partir de un vídeo de entrada.
 
@@ -106,7 +119,7 @@ El sistema hace uso de un modelo YOLO basándose en la librería YOLOv8 pre-entr
 
 - <u>Visualización:</u> El sistema visualiza los resultados de detección y seguimiento, junto con la velocidad, la dirección y los conteos de vehículos, directamente sobre los fotogramas del vídeo.
 
-# Fuentes y Tecnologías Utilizadas <a name="Fuentes-y-Tecnologías-Utilizadas"></a>
+# 🛠️ Fuentes y Tecnologías Utilizadas <a name="Fuentes-y-Tecnologías-Utilizadas"></a>
 
 - <u>Python:</u> Lenguaje de programación utilizado para el desarrollo del proyecto.
 
@@ -117,11 +130,11 @@ El sistema hace uso de un modelo YOLO basándose en la librería YOLOv8 pre-entr
     - <u>LAP (Linear Assignment Problem Solver):</u> Utilizada para el rastreo de objetos.
     - <u>Shapely:</u> Biblioteca para cálculos geométricos (e.g., distancia a la línea de conteo).
 
-# Conclusiones <a name="Conclusiones"></a>
+# 🤔 Conclusiones <a name="Conclusiones"></a>
 
 El proyecto demuestra cómo las técnicas de visión por computador pueden llegar a ser realmente útiles en un contexto aplicado a problemas de la vida real en un escenario como por ejemplo, el análisis del tráfico vehicular de manera automática y eficiente, pudiendo tener su implantación un impacto socio-económico. La detección de vehículos, el cálculo de la velocidad y dirección, así como el conteo de vehículos en tiempo real son útiles para la gestión y planificación del tráfico en ciudades alrededor del mundo.
 
-# Propuesta de Ampliación y Posibles Mejoras <a name="Propuesta-de-Ampliación-y-Posibles-Mejoras"></a>
+# 📈 Propuesta de Ampliación y Posibles Mejoras <a name="Propuesta-de-Ampliación-y-Posibles-Mejoras"></a>
 
 Tras analizar las capacidades ofrecidas actualmente por la aplicación, se han considerado de interés para el desarrollo posterior las siguientes ampliaciones y mejoras:
 
@@ -130,7 +143,7 @@ Tras analizar las capacidades ofrecidas actualmente por la aplicación, se han c
 - <u>Integración con sistemas de gestión de tráfico en tiempo real:</u> Permitir que los resultados se envíen directamente a plataformas oficiales de gestión de tráfico.
 - <u>Implementación de un sistema de alerta:</u> Alertas automáticas para la detección de incidentes o tráfico inusualmente alto.
 
-# Recursos Empleados <a name="Recursos-Empleados"></a>
+# 📖 Recursos Empleados <a name="Recursos-Empleados"></a>
 
 1. [YOLOv8 Documentación Oficial](https://yolov8.org/yolov8-train-custom-dataset-train/)
 2. [YOLOv8 Tutorial](https://github.com/roboflow/notebooks)
