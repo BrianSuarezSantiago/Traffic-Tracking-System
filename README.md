@@ -20,7 +20,7 @@
 
 <h1 align="center">🧠 Detección de Vehículos y Análisis de Tráfico e Infracciones 🤖</h1>
 
-<img width="" height="" src="./resources/Header.jpg" alt="City Traffic">
+<img width="" height="" src="./resources/Header.jpeg" alt="City Traffic Monitoring">
 
 El presente proyecto consiste en un sistema que ofrece una solución para una [Smart City](https://es.wikipedia.org/wiki/Ciudad_inteligente) basándose en el análisis de tráfico haciendo uso de técnicas de visión por computador para la detección de la velocidad, la dirección y el conteo de entradas y salidas de vehículos en una dirección a partir de un vídeo de entrada.
 
