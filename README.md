@@ -52,6 +52,11 @@ El objetivo principal de este proyecto es desarrollar un sistema para una Smart 
 
 Este sistema puede ser utilizado por departamentos de tránsito como la [Dirección General de Tráfico - DGT](https://www.dgt.es/inicio/) en España o investigadores para la obtención de datos relevantes sobre el comportamiento del tráfico en diversos escenarios.
 
+Otro objetivo del proyecto es automatizar el sistema de detección de infracciones de las señales de tráfico y facilitar al departamento de policía de tráfico la vigilancia y la adopción de medidas contra el propietario del vehículo infractor de forma rápida y eficaz. De esta manera, el sistema permite:
+
+1. Detectar y seguir con precisión el vehículo.
+2. Obtener en tiempo real la matrícula del vehículo infractor.
+
 # ⚙️ Guía de Instalación <a name="Guía-de-Instalación"></a>
 
 Para instalar y ejecutar el proyecto, sigue los siguientes pasos:
@@ -81,7 +86,7 @@ virtual_env_name\Scripts\activate
 3. Instala las dependencias necesarias:
 
 ```bash
-pip install opencv-python numpy ultralytics lap shapely
+pip install opencv-python numpy ultralytics lap shapely tensorflow keras mysql-connector-python
 ```
 
 4. Ejecuta el notebook `Traffic Tracking.ipynb` desde tu IDE favorito o a través del navegador web con Jupyter Notebook:
@@ -150,6 +155,16 @@ Tras analizar las capacidades ofrecidas actualmente por la aplicación, se han c
 3. [Entrenamiento de un objeto YOLOv8 con un dataset personalizado](https://github.com/roboflow/notebooks?tab=readme-ov-file)
 4. [Entrenamiento de un conjunto de datos personalizados con Ultralytics](https://www.ultralytics.com/es/blog/training-custom-datasets-with-ultralytics-yolov8-in-google-colab)
 5. [Dataset de vídeos utilizados](https://www.pexels.com)
+6. [Segundo dataset de vídeos utilizados](https://www.videvo.net/es/)
+7. [vehicle\_detection\_haarcascades GitHub Repository](https://github.com/andrewssobral/vehicle_detection_haarcascades/blob/master/cars.xml)
+8. [Car\_Sideview\_Detection GitHub Repository](https://github.com/ckyrkou/Car_Sideview_Detection)
+9. [Need Haar Cascades For Cars StackOverflow Question](https://stackoverflow.com/questions/45074199/need-haar-cascades-for-cars)
+10. [What are Vehicle XML Templates?](https://www.mods.studio/tutorials/how-to-create-a-vehicle-xml-template)
+11. [ChatGPT](https://openai.com/index/chatgpt/)
+
+# 📽️ Vídeo venta del trabajo <a name="Recursos-Empleados"></a>
+
+[Enlace al vídeo resumen de venta del trabajo](https://alumnosulpgc-my.sharepoint.com/personal/brian_suarez103_alu_ulpgc_es/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fbrian%5Fsuarez103%5Falu%5Fulpgc%5Fes%2FDocuments%2FVisión%20por%20Computador&ga=1)
 
 <hr>
 <p align="center">
