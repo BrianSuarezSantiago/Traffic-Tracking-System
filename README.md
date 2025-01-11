@@ -1,7 +1,3 @@
-<a href="https://matplotlib.org">
-    <img align="right" src="https://custom-icon-badges.herokuapp.com/badge/Matplotlib-14354C.svg?logo=matplotlib" alt="Matplotlib">
-</a>
-
 <a href="https://numpy.org">
     <img align="right" src="https://custom-icon-badges.herokuapp.com/badge/NumPy-14354C.svg?logo=numpylogo" alt="NumPy">
 </a>
@@ -20,7 +16,7 @@
 
 <h1 align="center">🧠 Detección de Vehículos y Análisis de Tráfico e Infracciones 🤖</h1>
 
-<img width="" height="" src="./resources/Header.jpeg" alt="City Traffic Monitoring">
+<img src="./resources/Header.jpeg" alt="City Traffic Monitoring">
 
 El presente proyecto consiste en un sistema que ofrece una solución para una [Smart City](https://es.wikipedia.org/wiki/Ciudad_inteligente) basándose en el análisis de tráfico haciendo uso de técnicas de visión por computador para la detección de la velocidad, la dirección y el conteo de entradas y salidas de vehículos en una dirección a partir de un vídeo de entrada.
 
@@ -34,11 +30,17 @@ El presente proyecto consiste en un sistema que ofrece una solución para una [S
 6. [Fuentes y Tecnologías Utilizadas](#Fuentes-y-Tecnologías-Utilizadas)
 7. [Conclusiones](#Conclusiones)
 8. [Propuesta de Ampliación y Posibles Mejoras](#Propuesta-de-Ampliación-y-Posibles-Mejoras)
+9. [Vídeo venta del trabajo](#Video-Venta-Trabajo)
+10. [Imágenes del resultado final](#Imagenes-Resultado-Final)
 
 
 # 📚 Motivación <a name="Motivación"></a>
 
 El monitoreo y análisis del tráfico vehicular es crucial para la mejora de la seguridad vial, optimización de la gestión del tráfico urbano, y la reducción de la congestión en las ciudades. Este proyecto proporciona una solución automatizada para la detección de vehículos en movimiento, el cálculo de su velocidad y dirección, y el conteo de entradas y salidas de vehículos en un tramo de carretera utilizando técnicas avanzadas de visión por computador.
+
+Asimismo, existe una necesidad crítica de un sistema automático que detecte infracciones por saltarse el semáforo en rojo utilizando grabaciones de [CCTV](https://es.wikipedia.org/wiki/Circuito_cerrado_de_televisión) en tiempo real, garantizando que los infractores sean identificados y sancionados.
+
+Aunque los enfoques de emplear modelos de aprendizaje profundo suelen ser muy aceptados y utilizados actualmente para este ámbito, existen determinadas limitaciones de recursos en cuanto al procesamiento digital de las imágenes sobre todo en cuanto a las capacidades de dichos modelos tradicionales en acción en relación a la detección de imágenes en condiciones adversas como en la oscuridad o con niebla.
 
 # 🚘 Objetivo <a name="Objetivo"></a>
 
@@ -56,6 +58,8 @@ Otro objetivo del proyecto es automatizar el sistema de detección de infraccion
 
 1. Detectar y seguir con precisión el vehículo.
 2. Obtener en tiempo real la matrícula del vehículo infractor.
+3. Reconocimiento de los colores del semáforo en tiempo real sin emplear modelos de inteligencia artificial.
+4. Integración de una base de datos para registrar infracciones de matrículas sancionadas utilizando `MySQL`.
 
 # ⚙️ Guía de Instalación <a name="Guía-de-Instalación"></a>
 
@@ -112,6 +116,8 @@ jupyter notebook
 vídeo_path = "vídeos/Traffic_1.mp4"
 ```
 
+- Dentro del cuaderno, reemplaza los valores `root` y `adminroot` en la sección de conexión a la base de datos con tus credenciales reales correspondientes a la base de datos `MySQL`.
+
 # 👨🏻‍💻 Descripción Técnica <a name="Descripción-Técnica"></a>
 
 El sistema hace uso de un modelo YOLO basándose en la librería YOLOv8 pre-entrenado previamente para la detección de objetos (vehículos, en este caso) en cada fotograma del vídeo de entrada. Una vez detectados los vehículos, se realiza el seguimiento de su trayectoria para calcular la velocidad y determinar la dirección del movimiento (norte o sur) utilizando puntos clave como coordenadas.
@@ -134,6 +140,11 @@ El sistema hace uso de un modelo YOLO basándose en la librería YOLOv8 pre-entr
     - <u>Ultralytics YOLO:</u> Herramienta utilizada para la detección de objetos.
     - <u>LAP (Linear Assignment Problem Solver):</u> Utilizada para el rastreo de objetos.
     - <u>Shapely:</u> Biblioteca para cálculos geométricos (e.g., distancia a la línea de conteo).
+    - <u>TensorFlow:</u> Biblioteca de código abierto para aprendizaje automático, utilizada para crear, entrenar y desplegar modelos de aprendizaje profundo y redes neuronales.
+    - <u>Keras:</u> API de alto nivel construida sobre TensorFlow, que simplifica la creación y el entrenamiento de modelos de aprendizaje profundo gracias a su diseño intuitivo y modular.
+    - <u>mysql-connector-python:</u> Librería que permite conectar aplicaciones desarrolladas en Python con bases de datos MySQL, ofreciendo una interfaz sencilla para realizar consultas, inserciones y actualizaciones de datos.
+
+- <u>MySQL:</u> Sistema de gestión de bases de datos relacional (RDBMS) de código abierto, utilizado para almacenar, organizar y gestionar grandes volúmenes de datos. En este proyecto, sirve como repositorio central para registrar las infracciones detectadas, almacenando información como las placas de vehículos penalizados y los detalles de las infracciones.
 
 # 🤔 Conclusiones <a name="Conclusiones"></a>
 
@@ -147,6 +158,7 @@ Tras analizar las capacidades ofrecidas actualmente por la aplicación, se han c
 - <u>Ampliación del soporte para múltiples carriles:</u> Incorporación de lógica para el manejo del tráfico en múltiples carriles y direcciones.
 - <u>Integración con sistemas de gestión de tráfico en tiempo real:</u> Permitir que los resultados se envíen directamente a plataformas oficiales de gestión de tráfico.
 - <u>Implementación de un sistema de alerta:</u> Alertas automáticas para la detección de incidentes o tráfico inusualmente alto.
+- <u>Ampliación del soporte para múltiples tipos de infracciones:</U> Incorporación de lógica para el manejo de múltiples infracciones más allá de saltarse el semáforo en rojo, como por ejemplo, detectar vehículos mal estacionados, uso de teléfono al volante, etc.
 
 # 📖 Recursos Empleados <a name="Recursos-Empleados"></a>
 
@@ -162,9 +174,21 @@ Tras analizar las capacidades ofrecidas actualmente por la aplicación, se han c
 10. [What are Vehicle XML Templates?](https://www.mods.studio/tutorials/how-to-create-a-vehicle-xml-template)
 11. [ChatGPT](https://openai.com/index/chatgpt/)
 
-# 📽️ Vídeo venta del trabajo <a name="Recursos-Empleados"></a>
+# 📽️ Vídeo venta del trabajo <a name="Video-Venta-Trabajo"></a>
 
 [Enlace al vídeo resumen de venta del trabajo](https://alumnosulpgc-my.sharepoint.com/personal/brian_suarez103_alu_ulpgc_es/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fbrian%5Fsuarez103%5Falu%5Fulpgc%5Fes%2FDocuments%2FVisión%20por%20Computador&ga=1)
+
+# 📸 Imágenes del resultado final <a name="Imagenes-Resultado-Final"></a>
+
+<img src="./resources/Result 1.png" alt="Result 1">
+
+<img src="./resources/Result 2.png" alt="Result 2">
+
+<img src="./resources/Result 3.png" alt="Result 3">
+
+<img src="./resources/Result 4.png" alt="Result 4">
+
+<img src="./resources/Result 5.png" alt="Result 5">
 
 <hr>
 <p align="center">
